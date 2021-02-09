@@ -1,0 +1,11 @@
+{
+  "name": "emoji-length-accurancy-benchmark",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "grapheme-splitter": "^1.0.4",
+    "stringz": "^2.1.0"
+  }
+}
