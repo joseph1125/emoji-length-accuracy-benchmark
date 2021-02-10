@@ -1,6 +1,7 @@
 import fs from "fs-extra";
 import GraphemeSplitterTester from "./testers/GraphemeSplitter.mjs";
 import NativeTester from "./testers/Native.mjs";
+import CustomRunesTester from "./testers/Runes.mjs";
 import StringZTester from "./testers/Stringz.mjs";
 
 const datasets = [
@@ -18,6 +19,7 @@ const testers = [
   new NativeTester(),
   new StringZTester(),
   new GraphemeSplitterTester(),
+  new CustomRunesTester(),
 ];
 
 const result = {};
@@ -31,9 +33,11 @@ function performTestOnData(tester, dataset) {
     }
   }
   return JSON.stringify({
-    correct: correctCount,
-    "correct %": ((correctCount / dataset.data.length) * 100).toFixed(3),
-    "time (ms)": new Date().getTime() - start,
+    correct: `${correctCount} (${(
+      (correctCount / dataset.data.length) *
+      100
+    ).toFixed(3)}%)`,
+    time: `${new Date().getTime() - start}ms`,
   });
 }
 
