@@ -1,6 +1,7 @@
 # Emoji length accuracy benchmark
 
-This benchmark aims at calculating accuracy of emojis via different packages.
+This benchmark aims at providing accuracy of calculating length of emojis via different packages.
+
 Unicode 13.1 emojis are used for the benchmark.
 
 ### Testers
