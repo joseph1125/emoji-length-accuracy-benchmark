@@ -1,8 +1,8 @@
 import fs from "fs-extra";
 import GraphemeSplitterTester from "./testers/GraphemeSplitter.mjs";
 import NativeTester from "./testers/Native.mjs";
-import CustomRunesTester from "./testers/Runes.mjs";
 import StringZTester from "./testers/Stringz.mjs";
+import RunesTester from "./testers/Runes.mjs";
 
 const datasets = [
   {
@@ -19,7 +19,7 @@ const testers = [
   new NativeTester(),
   new StringZTester(),
   new GraphemeSplitterTester(),
-  new CustomRunesTester(),
+  new RunesTester(),
 ];
 
 const result = {};

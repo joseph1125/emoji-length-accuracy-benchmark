@@ -6,6 +6,7 @@
   "dependencies": {
     "fs-extra": "^9.1.0",
     "grapheme-splitter": "^1.0.4",
+    "runes": "^0.4.3",
     "stringz": "^2.1.0"
   }
 }

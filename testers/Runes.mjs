@@ -1,7 +1,7 @@
-import runes from "../lib/runes.mjs";
+import runes from "runes";
 
-export default class CustomRunesTester {
-  name = "custom-runes";
+export default class RunesTester {
+  name = "runes";
 
   getLength(text) {
     return runes(text).length;
