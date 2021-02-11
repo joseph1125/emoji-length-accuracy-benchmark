@@ -3,6 +3,7 @@ import GraphemeSplitterTester from "./testers/GraphemeSplitter.mjs";
 import NativeTester from "./testers/Native.mjs";
 import StringZTester from "./testers/Stringz.mjs";
 import RunesTester from "./testers/Runes.mjs";
+import DartTextTester from "./testers/DartText.mjs";
 
 const datasets = [
   {
@@ -20,6 +21,7 @@ const testers = [
   new StringZTester(),
   new GraphemeSplitterTester(),
   new RunesTester(),
+  new DartTextTester(),
 ];
 
 const result = {};
