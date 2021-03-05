@@ -4,7 +4,7 @@
   "main": "index.mjs",
   "license": "MIT",
   "dependencies": {
-    "dart_text": "^1.1.2",
+    "dart-text": "^1.0.0",
     "fs-extra": "^9.1.0",
     "grapheme-splitter": "^1.0.4",
     "runes": "^0.4.3",

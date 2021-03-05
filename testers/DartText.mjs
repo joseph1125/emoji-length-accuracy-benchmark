@@ -1,9 +1,9 @@
-import dartText from "dart_text";
+import dartText from "dart-text";
 
 export default class DartTextTester {
-  name = "dart_text";
+  name = "dart-text";
 
   getLength(text) {
-    return dartText.getTextLength(text);
+    return dartText.length(text);
   }
 }
