@@ -2,6 +2,6 @@ export default class NativeTester {
   name = "native";
 
   getLength(text) {
-    return text.length;
+    return Array.from(text).length;
   }
 }
